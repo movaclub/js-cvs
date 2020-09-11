@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CSV Processor</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/csv-proc.css">
+</head>
+<body>
+
+<div class="page">
+  <div id="file-upload" class="file-upload">
+    <form id="upload" enctype="multipart/form-data">
+      <label for="file-input">Pick a source file: </label>
+      <input
+          onchange="procFile(this.files[0])"
+          accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"
+          id="file-input"
+          type="file"/>
+    </form>
+  </div>
+  <div class="txt-output">
+    <h5>Source Set</h5>
+    <div id="txt-src" class="file-txt-src">FILE txt src</div>
+
+    <h5>Result Set</h5>
+    <div id="txt-proc" class="file-txt-proc">FILE txt proc</div>
+  </div>
+</div>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

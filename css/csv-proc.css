@@ -1,0 +1,53 @@
+body {
+  max-width: 69vw;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-size: 1.248em;
+}
+
+.page {
+  margin: 1em 0 0 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  gap: .88em;
+}
+
+.file-upload {
+  flex: 1;
+  border-bottom: 1px solid lightgray;
+  padding: .22em;
+}
+
+.txt-output {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: space-between;
+  gap: .88em;
+}
+
+.file-txt-src {
+  flex: 1;
+  flex-basis: 48%;
+  padding: .22em;
+}
+
+.file-txt-proc {
+  flex: 1;
+  flex-basis: 48%;
+  padding: .22em;
+}
+
+h5 {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
